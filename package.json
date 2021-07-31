@@ -1,5 +1,5 @@
 {
-    "version": "0.1.0",
+    "version": "1.0.0",
     "license": "MIT",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
@@ -36,18 +36,15 @@
         "trailingComma": "es5"
     },
     "name": "react-skycons-extended",
+    "description": "React component for Skycons. Extended version with more icons and option to colorize each icon part.",
     "author": "Bartosz Magiera",
     "module": "dist/react-skycons-extended.esm.js",
-    "size-limit": [
-        {
-            "path": "dist/react-skycons-extended.cjs.production.min.js",
-            "limit": "10 KB"
-        },
-        {
-            "path": "dist/react-skycons-extended.esm.js",
-            "limit": "10 KB"
-        }
-    ],
+    "keywords": ["react", "react-component", "skycons", "icons", "weather"],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bartosz121/react-skycons-extended.git"
+    },
+    "homepage": "https://github.com/bartosz121/react-skycons-extended/#readme",
     "devDependencies": {
         "@babel/core": "^7.14.8",
         "@size-limit/preset-small-lib": "^5.0.2",
