@@ -53,8 +53,8 @@ export interface Props {
   icon: SkyconType;
   color: ColorableParts | string;
   size: Size;
-  animate: boolean;
-  resizeClear: boolean;
+  animate?: boolean;
+  resizeClear?: boolean; // it is recommended by skycons authors to make resizeClear always true
 }
 
 export const ReactSkycon: React.FC<Props> = ({
