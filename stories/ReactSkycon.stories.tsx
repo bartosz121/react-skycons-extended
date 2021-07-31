@@ -3,7 +3,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ReactSkycon, Props } from '../src';
 
-import SkyconType from '../src/SkyconType';
+import { SkyconType } from '../src';
 
 const meta: Meta = {
   component: ReactSkycon,

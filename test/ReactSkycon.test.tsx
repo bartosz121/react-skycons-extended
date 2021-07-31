@@ -1,7 +1,8 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
 import { ReactSkycon } from '../src';
-import SkyconType from '../src/SkyconType'
+
+import { SkyconType } from '../src';
 
 const props = {
   icon: SkyconType.CLEAR_DAY,
