@@ -44,15 +44,10 @@ export interface ColorableParts {
   fog?: string;
 }
 
-interface Size {
-  width: number;
-  height: number;
-}
-
 export interface Props {
   icon: SkyconType;
   color: ColorableParts | string;
-  size: Size;
+  size: number;
   animate?: boolean;
   resizeClear?: boolean; // it is recommended by skycons authors to make resizeClear always true
 }
@@ -60,7 +55,7 @@ export interface Props {
 export const ReactSkycon: React.FC<Props> = ({
   icon = SkyconType.CLEAR_DAY,
   color = 'gold',
-  size = { width: 128, height: 128 },
+  size = 128,
   animate = true,
   resizeClear = true,
 }) => {
@@ -82,6 +77,6 @@ export const ReactSkycon: React.FC<Props> = ({
   }, [icon, color, size, animate, resizeClear]);
 
   return (
-    <canvas ref={skyconCanvas} width={size.width} height={size.height}></canvas>
+    <canvas ref={skyconCanvas} width={size} height={size}></canvas>
   );
 };
