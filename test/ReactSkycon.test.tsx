@@ -7,7 +7,7 @@ import { SkyconType } from '../src';
 const props = {
   icon: SkyconType.CLEAR_DAY,
   color: "gold",
-  size: {width: 128, height: 128},
+  size: 128,
   animate: true,
   resizeClear: true
 }

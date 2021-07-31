@@ -24,7 +24,7 @@ export const Default = Template.bind({});
 Default.args = {
   icon: SkyconType.CLEAR_DAY,
   color: 'gold',
-  size: { width: 128, height: 128 },
+  size: 128,
   animate: true,
   resizeClear: true,
 };
@@ -38,7 +38,7 @@ ColorablePartsExample.args = {
     rain: 'blue',
     dark_cloud: 'green',
   },
-  size: { width: 128, height: 128 },
+  size: 128,
   animate: true,
   resizeClear: true,
 };
