@@ -4,13 +4,9 @@ Easy to use react component for Skycons. Extended version with more icons from [
 
 Created in [TSDX](https://github.com/weiran-zsd/tsdx).
 
----
-
 ## Avaliable skycons
 
 ![Demo gif 1](./demo-gif1.gif)
-
----
 
 ## Installation
 
@@ -26,13 +22,9 @@ or
   yard add react-skycons-extended
 ```
 
----
-
 ## Demo
 
 Check [Demo]() to see it in action.
-
----
 
 ## Usage
 
@@ -75,7 +67,7 @@ export default App;
 
 ### Props
 
-- icon: Takes a value from `SkyconType` which contain:
+- icon: Takes a value from `SkyconType` which is:
 
   - CLEAR_DAY
   - CLEAR_NIGHT
@@ -123,8 +115,6 @@ export default App;
 ## Example of changing color of each part
 
 ![Demo gif 2](./demo-gif2.gif)
-
----
 
 ## Storybook
 
