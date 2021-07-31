@@ -2,7 +2,7 @@
 
 Easy to use react component for Skycons. Extended version with more icons from [skycons by galdiuz](https://github.com/galdiuz/skycons) and option to colorize each part of the icon.
 
-Created in [TSDX](https://github.com/weiran-zsd/tsdx).
+Created with [TSDX](https://github.com/weiran-zsd/tsdx).
 
 ## Avaliable skycons
 
@@ -24,7 +24,7 @@ or
 
 ## Demo
 
-Check [Demo]() to see it in action.
+Check [Demo](https://codesandbox.io/s/react-skycons-extended-demo-xcp8b) to see it in action.
 
 ## Usage
 
@@ -92,7 +92,7 @@ export default App;
   - THUNDER_SHOWERS_NIGHT
   - HAIL
 
-- size: object with height and width
+- size: number value
 
 - animate: `true` (default) if you want to animate the icon `false` if otherwise
 
