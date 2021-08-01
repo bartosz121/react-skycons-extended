@@ -1,10 +1,10 @@
 # React Skycons Extended
 
-Easy to use react component for Skycons. Extended version with more icons from [skycons by galdiuz](https://github.com/galdiuz/skycons) and option to colorize each part of the icon.
+Easy to use react component for Skycons. Extended version with more icons from this [skycons fork](https://github.com/galdiuz/skycons) and option to colorize each part of the icon.
 
 Created with [TSDX](https://github.com/weiran-zsd/tsdx).
 
-## Avaliable skycons
+## Available skycons
 
 ![Demo gif 1](./demo-gif1.gif)
 
