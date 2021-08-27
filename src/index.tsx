@@ -44,7 +44,7 @@ export interface ColorableParts {
   fog?: string;
 }
 
-export interface Props {
+export interface Props extends Omit<React.CanvasHTMLAttributes<HTMLCanvasElement>, 'color'> {
   icon: SkyconType;
   color: ColorableParts | string;
   size: number;
@@ -58,6 +58,9 @@ export const ReactSkycon: React.FC<Props> = ({
   size = 128,
   animate = true,
   resizeClear = true,
+  height, // grab height and width here to not override our canvas width and height being set to 'size'
+  width,
+  ...props
 }) => {
   const skyconCanvas = useRef<HTMLCanvasElement>(null);
 
@@ -77,6 +80,6 @@ export const ReactSkycon: React.FC<Props> = ({
   }, [icon, color, size, animate, resizeClear]);
 
   return (
-    <canvas ref={skyconCanvas} width={size} height={size}></canvas>
+    <canvas ref={skyconCanvas} width={size} height={size} {...props}></canvas>
   );
 };
