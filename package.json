@@ -1,70 +1,52 @@
 {
-    "version": "1.0.2",
-    "license": "MIT",
-    "main": "dist/index.js",
-    "typings": "dist/index.d.ts",
-    "files": [
-        "dist",
-        "src"
-    ],
-    "engines": {
-        "node": ">=12"
-    },
-    "scripts": {
-        "start": "tsdx watch",
-        "build": "tsdx build",
-        "test": "tsdx test --passWithNoTests",
-        "lint": "tsdx lint",
-        "prepare": "tsdx build",
-        "size": "size-limit",
-        "analyze": "size-limit --why",
-        "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
-    },
-    "peerDependencies": {
-        "react": ">=16"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "tsdx lint"
-        }
-    },
-    "prettier": {
-        "printWidth": 80,
-        "semi": true,
-        "singleQuote": true,
-        "trailingComma": "es5"
-    },
-    "name": "react-skycons-extended",
-    "description": "React component for Skycons. Extended version with more icons and option to colorize each icon part.",
-    "author": "Bartosz Magiera",
-    "module": "dist/react-skycons-extended.esm.js",
-    "keywords": ["react", "react-component", "skycons", "icons", "weather"],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/bartosz121/react-skycons-extended.git"
-    },
-    "homepage": "https://github.com/bartosz121/react-skycons-extended/#readme",
-    "devDependencies": {
-        "@babel/core": "^7.14.8",
-        "@size-limit/preset-small-lib": "^5.0.2",
-        "@storybook/addon-essentials": "^6.3.6",
-        "@storybook/addon-info": "^5.3.21",
-        "@storybook/addon-links": "^6.3.6",
-        "@storybook/addons": "^6.3.6",
-        "@storybook/react": "^6.3.6",
-        "@types/react": "^17.0.15",
-        "@types/react-dom": "^17.0.9",
-        "babel-loader": "^8.2.2",
-        "canvas": "^2.8.0",
-        "husky": "^7.0.1",
-        "react": "^16.14.0",
-        "react-dom": "^16.14.0",
-        "react-is": "^17.0.2",
-        "size-limit": "^5.0.2",
-        "tsdx": "^0.14.1",
-        "tslib": "^2.3.0",
-        "typescript": "^4.3.5"
-    },
-    "dependencies": {}
+  "name": "react-skycons-extended",
+  "description": "React skycons with more icons & each part can be colored separately",
+  "author": "Bartosz Magiera",
+  "private": false,
+  "version": "2.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/react-skycons-extended.umd.cjs",
+  "module": "./dist/react-skycons-extended.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/react-skycons-extended.js",
+      "require": "./dist/react-skycons-extended.umd.cjs"
+    }
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "skycons",
+    "icons",
+    "weather"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bartosz121/react-skycons-extended.git"
+  },
+  "homepage": "https://github.com/bartosz121/react-skycons-extended/#readme",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "canvas": "^2.11.0",
+    "jsdom": "^21.1.0",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-dts": "^2.0.2",
+    "vitest": "^0.28.5"
+  }
 }
