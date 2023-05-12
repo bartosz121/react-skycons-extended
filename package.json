@@ -3,7 +3,7 @@
   "description": "React skycons with more icons & each part can be colored separately",
   "author": "Bartosz Magiera",
   "private": false,
-  "version": "2.0.1",
+  "version": "2.0.2",
   "type": "module",
   "license": "MIT",
   "files": [
@@ -11,9 +11,10 @@
   ],
   "main": "./dist/react-skycons-extended.umd.cjs",
   "module": "./dist/react-skycons-extended.js",
-  "types": "dist/main.d.ts",
+  "types": "./dist/main.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/main.d.ts",
       "import": "./dist/react-skycons-extended.js",
       "require": "./dist/react-skycons-extended.umd.cjs"
     }
